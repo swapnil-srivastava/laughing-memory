@@ -1,4 +1,4 @@
-package eu.swapnilsrivastava.demo.model;
+package eu.swapnilsrivastava.swapnilsrivastava.model;
 
 public class HelloWorldModel {
     

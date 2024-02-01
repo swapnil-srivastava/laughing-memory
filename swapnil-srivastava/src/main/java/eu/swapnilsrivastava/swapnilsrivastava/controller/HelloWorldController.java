@@ -1,4 +1,4 @@
-package eu.swapnilsrivastava.demo.controller;
+package eu.swapnilsrivastava.swapnilsrivastava.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

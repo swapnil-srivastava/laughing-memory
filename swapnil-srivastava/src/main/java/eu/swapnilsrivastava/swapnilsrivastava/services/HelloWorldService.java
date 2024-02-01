@@ -1,4 +1,4 @@
-package eu.swapnilsrivastava.demo.services;
+package eu.swapnilsrivastava.swapnilsrivastava.services;
 
 public class HelloWorldService {
     

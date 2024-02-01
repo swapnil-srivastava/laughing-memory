@@ -1,4 +1,4 @@
-package eu.swapnilsrivastava.demo.repository;
+package eu.swapnilsrivastava.swapnilsrivastava.repository;
 
 public class HelloWorldRepository {
     
