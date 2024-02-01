@@ -9,15 +9,13 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>eu.swapnilsrivastava</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>swapnil-srivastava</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
+	<name>swapnil-srivastava</name>
 	<description>Demo project for Spring Boot</description>
-
 	<properties>
 		<java.version>21</java.version>
 	</properties>
-	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -40,14 +38,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.11.0</version>
-				<configuration>
-					<release>11</release> <!-- replace with your JDK version -->
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>

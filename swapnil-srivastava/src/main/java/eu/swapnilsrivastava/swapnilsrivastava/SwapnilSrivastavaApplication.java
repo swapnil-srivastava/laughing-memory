@@ -1,13 +1,13 @@
-package eu.swapnilsrivastava.demo;
+package eu.swapnilsrivastava.swapnilsrivastava;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class SwapnilSrivastavaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(SwapnilSrivastavaApplication.class, args);
 	}
 
 }
