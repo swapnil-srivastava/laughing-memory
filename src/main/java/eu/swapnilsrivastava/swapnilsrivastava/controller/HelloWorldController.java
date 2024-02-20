@@ -16,4 +16,9 @@ public class HelloWorldController {
     public String HelloWorldSprings() {
         return "Hello World Spring";
     }
+
+    @GetMapping("/hello-kafka")
+    public void HelloKafka() {
+        
+    }
 }
