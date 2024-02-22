@@ -1,4 +1,4 @@
-package example;
+package eu.swapnilsrivastava.swapnilsrivastava;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
