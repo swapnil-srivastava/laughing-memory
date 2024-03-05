@@ -1,9 +1,15 @@
 package eu.swapnilsrivastava.swapnilsrivastava.model;
 
+import java.util.List;
+
+import org.hibernate.annotations.Type;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
+import jakarta.persistence.ManyToMany;
 
 @Entity(name="speakers")
 public class Speaker {
@@ -17,10 +23,25 @@ public class Speaker {
     private String company;
     private String speaker_bio;
 
+    @Lob
+    @Type(type="org.hibernate.type.BinaryType")
+    private byte[] speaker_photo;
+
+    @ManyToMany(mappedBy = "speakers")
+    private List<Session> sessions;
+    
+    public List<Session> getSessions() {
+        return sessions;
+    }
+
+    public void setSessions(List<Session> sessions) {
+        this.sessions = sessions;
+    }
+
     public Speaker() {
     
     }
-    
+
     public String getFirst_name() {
         return first_name;
     }
@@ -59,6 +80,14 @@ public class Speaker {
 
     public void setSpeaker_bio(String speaker_bio) {
         this.speaker_bio = speaker_bio;
+    }
+
+    public byte[] getSpeaker_photo() {
+        return speaker_photo;
+    }
+
+    public void setSpeaker_photo(byte[] speaker_photo) {
+        this.speaker_photo = speaker_photo;
     }
 
 }
