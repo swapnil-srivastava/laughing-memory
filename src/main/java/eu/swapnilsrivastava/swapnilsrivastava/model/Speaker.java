@@ -1,8 +1,9 @@
 package eu.swapnilsrivastava.swapnilsrivastava.model;
 
+import java.sql.Types;
 import java.util.List;
 
-import org.hibernate.annotations.Type;
+import org.hibernate.annotations.JdbcTypeCode;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,8 +24,10 @@ public class Speaker {
     private String company;
     private String speaker_bio;
 
+
+    // @Type(type="org.hibernate.type.BinaryType") --> @JdbcTypeCode(Types.BINARY) Since hibernate 6
     @Lob
-    @Type(type="org.hibernate.type.BinaryType")
+    @JdbcTypeCode(Types.BINARY)
     private byte[] speaker_photo;
 
     @ManyToMany(mappedBy = "speakers")
