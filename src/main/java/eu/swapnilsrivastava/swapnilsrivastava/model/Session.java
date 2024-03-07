@@ -2,6 +2,8 @@ package eu.swapnilsrivastava.swapnilsrivastava.model;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -11,6 +13,7 @@ import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 
 @Entity(name="sessions")
+@JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
 public class Session {
     
     @Id
