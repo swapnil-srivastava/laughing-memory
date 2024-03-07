@@ -46,6 +46,7 @@ public class SessionController {
     @PutMapping("{id}")
     public Session updateSpeaker(@PathVariable Long id, @RequestBody Session session) {
         // as this is a put , we expect all the keys/attributes to be passed in. a Patch would only need what attribute which is changes or needs to be changed. 
+        // TODO: add the validation for all the attributes which are passed in
         Session existingSession = sessionRepository.getOne(id);
         BeanUtils.copyProperties(session, existingSession, "session_id");
         return sessionRepository.saveAndFlush(existingSession);
