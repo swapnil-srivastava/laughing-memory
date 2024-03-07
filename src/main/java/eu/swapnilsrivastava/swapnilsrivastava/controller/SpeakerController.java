@@ -49,7 +49,7 @@ public class SpeakerController {
         // In case of put we are replacing all the values of speaker object but if it was a PATCH we only would need to all the key which is nesscary. 
         // TODO: Adding the validation for each key and return 400 if the value is wrong 
         Speaker existingSpeaker = speakerRepository.getOne(id);
-        BeanUtils.copyProperties(speaker, existingSpeaker);
+        BeanUtils.copyProperties(speaker, existingSpeaker, "speaker_id"); // in the third parameter we are ignoring the property for copying
         return speakerRepository.saveAndFlush(speaker);
     }
     
