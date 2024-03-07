@@ -35,7 +35,7 @@ public class SessionController {
     @ResponseStatus(HttpStatus.CREATED)
     public Session create(@RequestBody final Session session) {
         return sessionRepository.saveAndFlush(session);
-    }
+    } 
 
     @DeleteMapping("{id}")
     public void delete(@RequestParam Long id) {
